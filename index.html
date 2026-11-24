@@ -122,6 +122,11 @@ a.proj:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
 .results{padding-left:1.1em;max-width:62em}
 .results li{margin-bottom:12px}
 @media(max-width:900px){.dgrid{grid-template-columns:minmax(0,1fr)}}
+.petgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.petpic{margin:0;padding:0;overflow:hidden}
+.petpic img{border-radius:12px}
+.pets{border-top:1px solid var(--line)}
+@media(max-width:720px){.petgrid{grid-template-columns:minmax(0,1fr)}}
 footer small{display:block;margin-top:28px;color:var(--mute);font-size:13.5px}
 @media(max-width:900px){.hero .wrap{grid-template-columns:minmax(0,1fr)}.timeline{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:720px){.projects,.two,.skills,footer .wrap{grid-template-columns:minmax(0,1fr)}nav b{margin-right:0}}
@@ -293,6 +298,21 @@ footer small{display:block;margin-top:28px;color:var(--mute);font-size:13.5px}
   </div>
 </section>
 
+<section class="band pets" id="outside-the-lab">
+  <div class="wrap petgrid">
+    <figure class="pic petpic">
+      <img src="birds.jpg" alt="Two green and yellow budgerigars on a wooden perch in front of a colourful bead toy: Rose on the left and Jack on the right" loading="lazy">
+    </figure>
+    <div>
+      <h2>Outside the lab</h2>
+      <p class="sub">When I'm not debugging KV caches, I'm usually with my two budgerigars.</p>
+      <ul class="list">
+        <li><b>Rose</b><span class="meta">On the left · female budgerigar, 1.5 years old</span></li>
+        <li><b>Jack</b><span class="meta">On the right · male budgerigar, 1 year old</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
 </div>
 
 <article class="detail band" id="infixcache" hidden>
